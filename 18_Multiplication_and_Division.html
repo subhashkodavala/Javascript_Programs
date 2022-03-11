@@ -1,0 +1,34 @@
+<body bgcolor="orange">
+<script>
+	
+	function mul()
+	{
+
+		no1=parseInt(frm1.txt1.value);
+		no2=parseInt(frm1.txt2.value);
+		c=no1*no2;
+		alert("multiplication is :"+c);
+	}
+
+	function divi()
+	{
+
+		no1=parseInt(frm1.txt1.value);
+		no2=parseInt(frm1.txt2.value);
+		c = no1/no2;
+		alert("division is :"+c);
+	}
+
+
+</script>
+
+<form name="frm1">
+	<input type="text" name="txt1" value="" placeholder="enter no1">
+<br>
+     <input type="text" name="txt2" value="" placeholder="enter no2">
+<br>
+	<input type=button value="multiplication" onclick="mul();">
+<br>
+<input type=button value="division" onclick="divi();">
+
+</form>
