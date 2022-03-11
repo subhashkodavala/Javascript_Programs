@@ -1,0 +1,94 @@
+<script>
+
+	function validation()
+
+	{
+		 var pass=frm.pass.value;    
+		var pass2=frm.pass2.value;
+			
+			 if(document.frm.name.value=="")
+			    {
+					 	alert("please Enter Your Name");
+		 				return false;
+				}
+
+		 	 if(document.frm.userid.value.length<=3)
+				{
+						alert("please Enter valid user id");
+						return false;
+		
+				}
+			if(document.frm.userid.value.length>10)
+				{
+
+						alert("please Enter userid should less character length");
+						return false;
+				
+				}
+
+		    if(pass != pass2)
+				{
+
+						alert("both password are not match");
+						return false;
+			
+				}
+
+			if(!document.frm.agree.checked)
+				{	
+
+					    alert("please check agree button");
+			       		return false;
+			
+				}
+
+					return true;
+
+				}
+
+</script>
+<body bgcolor="black">
+<form name="frm" onsubmit="return validation();" method="post" action="2.html">
+<br><br>
+<hr width="45%">
+
+<br>
+<table width="322" border="8" bgcolor="orange" align="center">
+
+<tr>
+<td width="147"> USER NAME : </td>
+<td width="159"><input type="text" name="name" value=""></td>
+</tr>
+
+<tr>
+<td> USER ID : </td>
+<td><input type="text" name="userid" value=""></td>
+</tr>
+
+<tr>
+<td> PASSWORD : </td>
+<td><input type="text" name="pass" value=""></td>
+</tr>
+
+<tr>
+<td> CONFIRME PASSWORD : </td>
+<td><input type="text" name="pass2" value=""></td>
+</tr>
+
+<tr>
+<td> AGREE : </td>
+<td><input type="checkbox" name="agree"></td>
+</tr>
+
+<tr>
+<th><input type="submit" name="" value="REGISTER"></th>
+<th><input type="reset" name="" value="RESET"></th>
+</tr>
+
+</table>
+
+
+<br>
+<hr width="45%">
+</form>
+</body>
